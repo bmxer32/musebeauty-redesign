@@ -84,7 +84,7 @@ def build_footer():
     </div>
   </footer>"""
 
-# INDEX.HTML
+# 1. INDEX.HTML
 index_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -144,7 +144,7 @@ index_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <!-- SERVICES OVERVIEW SECTION (100% CACHE-BUSTED ACCURATE V2 IMAGES) -->
+  <!-- SERVICES OVERVIEW SECTION -->
   <section class="section section-bg" id="services">
     <div class="container">
       <div class="section-header">
@@ -319,46 +319,136 @@ index_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# SUBPAGES
-subpages_data = {
-    "lashes.html": ("v2_lashes.jpg", "Наращивание и Ламинирование Ресниц в Сочи | Muse Beauty", "Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Прайс-лист, фото работ и онлайн-запись.", "👁️ Эстетика взгляда", "Наращивание и Ламинирование Ресниц", "Легкое, комфортное ношение до 6 недель. Гипоаллергенные премиум-материалы, подбор изгиба и объема под форму ваших глаз.", "Онлайн запись на ресницы"),
-    "brows.html": ("v2_brows.jpg", "Оформление и Ламинирование Бровей в Сочи | Muse Beauty", "Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.", "✨ Архитектура бровей", "Идеальная форма и уход для ваших бровей", "Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.", "Онлайн запись на брови"),
-    "nails.html": ("v2_nails.jpg", "Маникюр и Педикюр в Сочи | Muse Beauty", "Аппаратный и комбинированный маникюр, педикюр, покрытие гель-лак, наращивание ногтей гель/акригель и дизайн в Сочи на Навагинской.", "💅 Эстетика ногтей", "Маникюр & Педикюр премиум класса", "Стерильный инструментарий в крафт-пакетах, чистый аппаратный маникюр, стойкое покрытие гель-лаком и моделирование ногтей.", "Онлайн запись на маникюр"),
-    "luxhair.html": ("v2_luxhair.jpg", "Уходы за Волосами Luxhair & Lebel в Сочи | Muse Beauty", "Ботокс для волос, кератин, нанопластика, спа-комплекс «Счастье для волос» Lebel и холодное восстановление в студии Healthy Hair & Muse Beauty Сочи.", "🌿 Здоровые & Сияющие волосы", "Уходы Luxhair & Реконструкция Волос", "Глубокое спа-восстановление, кератиновое выпрямление, ботокс и профессиональные японские протоколы Lebel для поврежденных волос.", "Онлайн запись на уход"),
-    "hair.html": ("v2_hair.jpg", "Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty", "Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.", "✂️ Колористика & Стрижки", "Парикмахерский Зал & Сложные Окрашивания", "Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.", "Онлайн запись к стилисту"),
-    "makeup.html": ("v2_makeup.jpg", "Макияж и Праздничные Образы в Сочи | Muse Beauty", "Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской.", "💄 Профессиональный визаж", "Макияж & Создание Образов", "Стойкий макияж для съемок, вечерних выходов и свадеб. Возможность параллельного сбора в 4 руки (макияж + укладка) за 1.5 часа.", "Онлайн запись на макияж"),
-    "contacts.html": ("generated.jpg", "Контакты и Адреса Филиалов в Сочи | Muse Beauty", "Адреса салонов Muse Beauty и Healthy Hair в центре Сочи: ул. Навагинская 15/9 и Навагинская 5/2. Телефоны, часы работы, онлайн-запись YClients.", "📍 Мы на карте Сочи", "Контакты & Запись в Салон", "Ждем вас ежедневно в наших уютных студиях на пешеходной улице Навагинская в центре Сочи.", "Выбрать время в YClients")
-}
-
-files_dict = {"index.html": index_content}
-
-for fname, (img, title, desc, tag, h1, sub, btn_txt) in subpages_data.items():
-    content = f"""<!DOCTYPE html>
+# 2. LASHES.HTML
+lashes_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
-  <meta name="description" content="{desc}">
+  <title>Наращивание и Ламинирование Ресниц в Сочи | Muse Beauty</title>
+  <meta name="description" content="Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Прайс-лист, фото работ и онлайн-запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
 <body>
 
-{build_header(fname)}
+{build_header("lashes.html")}
 
   <section class="hero-section">
     <div class="container hero-grid">
       <div>
-        <div class="hero-tag">{tag}</div>
-        <h1 class="hero-title">{h1}</h1>
-        <p class="hero-subtitle">{sub}</p>
+        <div class="hero-tag">👁️ Эстетика взгляда</div>
+        <h1 class="hero-title">Наращивание и Ламинирование Ресниц</h1>
+        <p class="hero-subtitle">Легкое, комфортное ношение до 6 недель. Гипоаллергенные премиум-материалы, индивидуальный подбор изгиба и объема под форму ваших глаз.</p>
         <div class="hero-cta-group">
-          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">{btn_txt}</a>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на ресницы</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="./assets/img/{img}" alt="{h1}" loading="eager">
+        <img src="./assets/img/v2_lashes.jpg" alt="Наращивание ресниц Muse Beauty Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">✨</div>
+        <div>
+          <h3 class="info-title">Носка до 6 недель</h3>
+          <p class="info-desc">Надежная фиксация и комфорт без утяжеления века</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🌿</div>
+        <div>
+          <h3 class="info-title">Гипоаллергенный клей</h3>
+          <p class="info-desc">Безопасные премиум составы для чувствительных глаз</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">👑</div>
+        <div>
+          <h3 class="info-title">Топ-мастера</h3>
+          <p class="info-desc">Идеальное разделение и симметрия правого и левого глаза</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист на Ресницы</h2>
+        <p class="section-subtitle">Точные цены без скрытых доплат. Процедура включает очищение и подготовку</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Классическое наращивание ресниц</span>
+            <span class="service-note">Естественный эффект, по 1 искусственной ресничке на натуральную.</span>
+          </div>
+          <span class="service-price">2 200 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Наращивание 1.5D / 2D</span>
+            <span class="service-note">Умеренный объем, придающий взгляду выразительность и бархатистость.</span>
+          </div>
+          <span class="service-price">2 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Наращивание 2.5D / 3D</span>
+            <span class="service-note">Пышный, яркий объем для любительниц подкрученного эффекта.</span>
+          </div>
+          <span class="service-price">2 800 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Голливудское наращивание (4D-6D)</span>
+            <span class="service-note">Максимально густой гиперобъем для ярких вечерних образов.</span>
+          </div>
+          <span class="service-price">3 200 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Ламинирование ресниц + окрашивание + уход</span>
+            <span class="service-note">Изгиб, глубокое окрашивание и укрепление своих натуральных ресниц.</span>
+          </div>
+          <span class="service-price">2 500 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED LASHES GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Примеры работ по ресницам</h2>
+        <p class="section-subtitle">Результаты наращивания и ламинирования у мастеров Muse Beauty Сочи</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/v2_lashes_gal_1.jpg" alt="Наращивание 2D объем ресниц" loading="lazy">
+          <div class="gallery-caption">Объемное наращивание 2D</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/v2_lashes_gal_2.jpg" alt="Ламинирование натуральных ресниц" loading="lazy">
+          <div class="gallery-caption">Ламинирование &amp; Изгиб</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/F8464A9E-67AB-44E3-B.jpeg" alt="Классическое естественное наращивание" loading="lazy">
+          <div class="gallery-caption">Классическое наращивание</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/CCB92D88-733F-4D50-9.webp" alt="Ламинирование с окрашиванием" loading="lazy">
+          <div class="gallery-caption">Ламинирование + Окрашивание</div>
+        </div>
       </div>
     </div>
   </section>
@@ -368,10 +458,802 @@ for fname, (img, title, desc, tag, h1, sub, btn_txt) in subpages_data.items():
   <script src="./assets/js/app.js"></script>
 </body>
 </html>"""
-    files_dict[fname] = content
+
+# 3. BROWS.HTML
+brows_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление и Ламинирование Бровей в Сочи | Muse Beauty</title>
+  <meta name="description" content="Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("brows.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">✨ Архитектура бровей</div>
+        <h1 class="hero-title">Идеальная форма и уход для ваших бровей</h1>
+        <p class="hero-subtitle">Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на брови</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/v2_brows.jpg" alt="Коррекция и ламинирование бровей Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">📐</div>
+        <div>
+          <h3 class="info-title">Индивидуальная геометрия</h3>
+          <p class="info-desc">Построение формы с учетом индивидуальной архитектоники лица</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🎨</div>
+        <div>
+          <h3 class="info-title">Стойкие красители</h3>
+          <p class="info-desc">Премиум хна и гипоаллергенная краска тон-в-тон</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💎</div>
+        <div>
+          <h3 class="info-title">Уход «Счастье для бровей»</h3>
+          <p class="info-desc">Глубокая питательная протеиновая маска для роста волосков</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист на Брови</h2>
+        <p class="section-subtitle">Профессиональный уход для идеальной симметрии и формы</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Коррекция бровей (пинцет / воск)</span>
+            <span class="service-note">Построение чистой формы и удаление лишних волосков.</span>
+          </div>
+          <span class="service-price">700 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Окрашивание бровей (краска / хна)</span>
+            <span class="service-note">Подбор оттенка тон-в-тон к цвету волос и кожи.</span>
+          </div>
+          <span class="service-price">800 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Комплекс: Коррекция + Окрашивание</span>
+            <span class="service-note">Архитектура, построение чистой формы и стойкий цвет.</span>
+          </div>
+          <span class="service-price">1 300 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Ламинирование (долговременная укладка)</span>
+            <span class="service-note">Фиксация послушного направления волосков на 4-6 недель.</span>
+          </div>
+          <span class="service-price">2 200 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Полный комплекс бровей</span>
+            <span class="service-note">Ламинирование + Коррекция + Окрашивание + Счастье для бровей.</span>
+          </div>
+          <span class="service-price">2 800 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED BROWS GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Примеры оформления бровей</h2>
+        <p class="section-subtitle">Чистая коррекция, ламинирование и окрашивание бровей в Сочи</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/v2_brows_gal_1.jpg" alt="Долговременная укладка бровей" loading="lazy">
+          <div class="gallery-caption">Долговременная укладка</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/v2_brows_gal_2.jpg" alt="Архитектура и окрашивание хной" loading="lazy">
+          <div class="gallery-caption">Архитектура &amp; Окрашивание</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/51FC2374-2DAE-4FDA-9.jpeg" alt="Коррекция формы бровей" loading="lazy">
+          <div class="gallery-caption">Коррекция воском/пинцетом</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/CF9B0EE0-51FE-4E0A-A.webp" alt="Комплексный уход бровей" loading="lazy">
+          <div class="gallery-caption">Комплекс «Счастье для бровей»</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+# 4. NAILS.HTML
+nails_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маникюр и Педикюр в Сочи | Muse Beauty</title>
+  <meta name="description" content="Аппаратный и комбинированный маникюр, педикюр, покрытие гель-лак, наращивание ногтей гель/акригель и дизайн в Сочи на Навагинской.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("nails.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">💅 Эстетика ногтей</div>
+        <h1 class="hero-title">Маникюр &amp; Педикюр премиум класса</h1>
+        <p class="hero-subtitle">Стерильный инструментарий в крафт-пакетах, чистый аппаратный маникюр, стойкое покрытие гель-лаком и моделирование ногтей.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на маникюр</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/v2_nails.jpg" alt="Маникюр и покрытия Muse Beauty Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">🛡️</div>
+        <div>
+          <h3 class="info-title">100% Стерильно</h3>
+          <p class="info-desc">Сухожар ГП-10, дезинфекция и вскрытие крафт-пакета при вас</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💎</div>
+        <div>
+          <h3 class="info-title">Гель-лак премиум</h3>
+          <p class="info-desc">Стойкость покрытия без сколов и отслоек до 4 недель</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✨</div>
+        <div>
+          <h3 class="info-title">Дизайн любой сложности</h3>
+          <p class="info-desc">Френч, втирка, градиент, рисунки и выравнивание формы</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист Ногтевого Сервиса</h2>
+        <p class="section-subtitle">Качественные материалы, абсолютная безопасность и безупречный результат</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Маникюр гигиенический (аппаратный / комбинированный)</span>
+            <span class="service-note">Безопасная обработка кутикулы и придание формы ногтям.</span>
+          </div>
+          <span class="service-price">1 200 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Маникюр + Покрытие гель-лак</span>
+            <span class="service-note">Комби-маникюр, выравнивание ногтевой пластины и покрытие.</span>
+          </div>
+          <span class="service-price">2 100 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Снятие + Маникюр + Покрытие гель-лак</span>
+            <span class="service-note">Снятие старого материала, обработка и свежее покрытие.</span>
+          </div>
+          <span class="service-price">2 300 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Педикюр гигиенический</span>
+            <span class="service-note">Аппаратная обработка пальцев и стоп с питанием.</span>
+          </div>
+          <span class="service-price">2 000 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Педикюр полный + Покрытие гель-лак</span>
+            <span class="service-note">Обработка стоп и пальцев с выравниванием и стойким гель-лаком.</span>
+          </div>
+          <span class="service-price">2 800 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Наращивание ногтей (гель / акригель)</span>
+            <span class="service-note">Моделирование любой длины и формы с опилом.</span>
+          </div>
+          <span class="service-price">3 500 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED NAILS GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Примеры работ по маникюру</h2>
+        <p class="section-subtitle">Чистый аппаратный маникюр и дизайн ногтей в студии Muse Beauty</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/v2_nails_gal_1.jpg" alt="Нюдовый маникюр с гель-лаком" loading="lazy">
+          <div class="gallery-caption">Nude Маникюр &amp; Выравнивание</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/v2_nails_gal_2.jpg" alt="Французский маникюр френч" loading="lazy">
+          <div class="gallery-caption">Французский маникюр Френч</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/24E4ADBA-B26A-422E-9.jpeg" alt="Аппаратный маникюр и дизайн" loading="lazy">
+          <div class="gallery-caption">Аппаратный маникюр</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/3B52DDCC-3A98-424D-B.webp" alt="Покрытие гель-лак" loading="lazy">
+          <div class="gallery-caption">Стойкое покрытие гель-лак</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+# 5. LUXHAIR.HTML
+luxhair_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Уходы за Волосами Luxhair & Lebel в Сочи | Muse Beauty</title>
+  <meta name="description" content="Ботокс для волос, кератин, нанопластика, спа-комплекс «Счастье для волос» Lebel и холодное восстановление в студии Healthy Hair & Muse Beauty Сочи.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("luxhair.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">🌿 Здоровые &amp; Сияющие волосы</div>
+        <h1 class="hero-title">Уходы Luxhair &amp; Реконструкция Волос</h1>
+        <p class="hero-subtitle">Глубокое спа-восстановление, кератиновое выпрямление, ботокс и профессиональные японские протоколы Lebel для поврежденных волос.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на уход</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/v2_luxhair.jpg" alt="Восстановление волос Luxhair Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">🌸</div>
+        <div>
+          <h3 class="info-title">Японский уход Lebel</h3>
+          <p class="info-desc">Спа-протокол «Счастье для волос» для глубокой гидратации</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✨</div>
+        <div>
+          <h3 class="info-title">Зеркальный блеск</h3>
+          <p class="info-desc">Ботокс и кератиновое выпрямление без пушистости до 6 месяцев</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🧪</div>
+        <div>
+          <h3 class="info-title">Молекулярное уплотнение</h3>
+          <p class="info-desc">Холодное восстановление кортекса поврежденного блонда</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист на Процедуры Luxhair</h2>
+        <p class="section-subtitle">Оздоровление и плотность волос с накопительным эффектом</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Ботокс для волос</span>
+            <span class="service-note">Глубокое питание, устранение пушистости и блеск.</span>
+          </div>
+          <span class="service-price">от 3 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Кератиновое выпрямление волос</span>
+            <span class="service-note">Идеальная гладкость, термозащита и шелковистость.</span>
+          </div>
+          <span class="service-price">от 4 000 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Нанопластика волос</span>
+            <span class="service-note">Органическое выпрямление жестких и непослушных кудрей.</span>
+          </div>
+          <span class="service-price">от 4 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Спа-уход «Счастье для волос» (Lebel)</span>
+            <span class="service-note">Японская многоступенчатая программа восстановления.</span>
+          </div>
+          <span class="service-price">от 3 000 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Холодное восстановление волос</span>
+            <span class="service-note">Бестемпературный молекулярный уход для ломких волос.</span>
+          </div>
+          <span class="service-price">от 2 800 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED LUXHAIR GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Результаты реконструкции волос</h2>
+        <p class="section-subtitle">Здоровые, шелковистые и блестящие волосы у наших клиентов</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/v2_luxhair_gal_1.jpg" alt="Зеркальный блеск ботокс для волос" loading="lazy">
+          <div class="gallery-caption">Ботокс &amp; Блеск волос</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/v2_luxhair.jpg" alt="Кератиновое выпрямление волос" loading="lazy">
+          <div class="gallery-caption">Кератиновое выпрямление</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/2558E8CB-F90B-4B83-A.jpeg" alt="Японское Счастье для волос Lebel" loading="lazy">
+          <div class="gallery-caption">Спа-уход Lebel «Счастье»</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/89C75270-F1FD-4357-8.jpeg" alt="Холодное восстановление блондок" loading="lazy">
+          <div class="gallery-caption">Холодное восстановление</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+# 6. HAIR.HTML
+hair_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty</title>
+  <meta name="description" content="Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("hair.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">✂️ Колористика &amp; Стрижки</div>
+        <h1 class="hero-title">Парикмахерский Зал &amp; Сложные Окрашивания</h1>
+        <p class="hero-subtitle">Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться к стилисту</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/v2_hair.jpg" alt="Окрашивание волос Airtouch Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">🎨</div>
+        <div>
+          <h3 class="info-title">Airtouch &amp; Балаяж</h3>
+          <p class="info-desc">Плавный переход от корней без резких границ и полос</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✂️</div>
+        <div>
+          <h3 class="info-title">Стрижки по форме</h3>
+          <p class="info-desc">Текстурированные женские стрижки, не требующие укладки</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💎</div>
+        <div>
+          <h3 class="info-title">Защитные протекторы</h3>
+          <p class="info-desc">Окрашивание с добавлением Olaplex / Блеск-тонирования</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист Парикмахерского Зала</h2>
+        <p class="section-subtitle">Работа на премиальных красителях с сохранением качества волос</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Женская стрижка (мытье + укладка)</span>
+            <span class="service-note">Подбор формы с учетом структуры и овалу лица.</span>
+          </div>
+          <span class="service-price">2 000 - 2 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Стрижка кончиков / Челка</span>
+            <span class="service-note">Ровный срез или оформление челки (шторка, прямая).</span>
+          </div>
+          <span class="service-price">800 - 1 000 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Окрашивание в один тон</span>
+            <span class="service-note">Обновление цвета, закрашивание седины и блеск.</span>
+          </div>
+          <span class="service-price">от 3 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Сложное окрашивание (Airtouch, Шатуш, Балаяж)</span>
+            <span class="service-note">Плавная растяжка цвета с тонированием.</span>
+          </div>
+          <span class="service-price">от 6 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Тонирование волос</span>
+            <span class="service-note">Нейтрализация желтизны и насыщение цвета пигментами.</span>
+          </div>
+          <span class="service-price">от 2 500 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED HAIR GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Примеры окрашиваний и стрижек</h2>
+        <p class="section-subtitle">Работы колористов и стилистов студии Muse Beauty в Сочи</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/A0C70495-F617-43CF-B.jpeg" alt="Airtouch сложный блонд" loading="lazy">
+          <div class="gallery-caption">Сложный блонд Airtouch</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/209E1C9C-5C52-4141-9.jpeg" alt="Окрашивание и укладка волос" loading="lazy">
+          <div class="gallery-caption">Окрашивание &amp; Укладка</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/5AF19170-D201-432E-B.jpeg" alt="Тонирование и локоны" loading="lazy">
+          <div class="gallery-caption">Тонирование &amp; Серф-локоны</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/67F00D5B-3A34-4337-A.jpeg" alt="Женская стрижка и укладка" loading="lazy">
+          <div class="gallery-caption">Женская стрижка по форме</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+# 7. MAKEUP.HTML
+makeup_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Макияж и Праздничные Образы в Сочи | Muse Beauty</title>
+  <meta name="description" content="Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("makeup.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">💄 Профессиональный визаж</div>
+        <h1 class="hero-title">Макияж &amp; Создание Образов</h1>
+        <p class="hero-subtitle">Стойкий макияж для съемок, вечерних выходов и свадеб. Возможность параллельного сбора в 4 руки (макияж + укладка) за 1.5 часа.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на макияж</a>
+          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/v2_makeup.jpg" alt="Макияж и праздничный образ Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="info-bar">
+      <div class="info-card">
+        <div class="info-icon">👑</div>
+        <div>
+          <h3 class="info-title">Люкс косметика</h3>
+          <p class="info-desc">Dior, Charlotte Tilbury, Tom Ford, Estée Lauder</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚡</div>
+        <div>
+          <h3 class="info-title">Сборы в 4 руки</h3>
+          <p class="info-desc">Макияж + Укладка одновременно всего за 1.5 часа</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✨</div>
+        <div>
+          <h3 class="info-title">Стойкость 24 часа</h3>
+          <p class="info-desc">Фиксация тона и пучковые ресницы без тяжести</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Прайс-лист на Визаж</h2>
+        <p class="section-subtitle">Индивидуальный образ под мероприятия и фотосессии</p>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Дневной / Nude макияж</span>
+            <span class="service-note">Легкий ровный тон, свежий румянец и естественный рельеф.</span>
+          </div>
+          <span class="service-price">2 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Вечерний / Смоки / Интенсивный макияж</span>
+            <span class="service-note">Выразительный макияж глаз, контуринг и пучковые ресницы.</span>
+          </div>
+          <span class="service-price">3 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Свадебный макияж</span>
+            <span class="service-note">Повышенная стойкость 24ч, проработка декольте и ресницы.</span>
+          </div>
+          <span class="service-price">4 500 ₽</span>
+        </div>
+        <div class="price-row">
+          <div class="price-info">
+            <span class="service-name">Полный образ в 4 руки (Макияж + Укладка)</span>
+            <span class="service-note">Одновременная работа визажиста и стилиста по волосам.</span>
+          </div>
+          <span class="service-price">5 000 - 6 500 ₽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED MAKEUP GALLERY -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Примеры макияжа и образов</h2>
+        <p class="section-subtitle">Работы визажистов салона Muse Beauty в Сочи</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/img/F09AB9EC-4715-4CE5-8.jpeg" alt="Вечерний макияж Смоки" loading="lazy">
+          <div class="gallery-caption">Вечерний макияж</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/441C87DB-1796-4122-8.jpeg" alt="Дневной Nude макияж" loading="lazy">
+          <div class="gallery-caption">Дневной Nude макияж</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/CFA297DD-A8F4-471D-B.jpeg" alt="Образ для фотосессий" loading="lazy">
+          <div class="gallery-caption">Образ для фотосессии</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/img/9E335A47-6E57-4C87-8.jpeg" alt="Свадебный макияж визаж" loading="lazy">
+          <div class="gallery-caption">Свадебный макияж</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+# 8. CONTACTS.HTML
+contacts_content = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и Адреса Филиалов в Сочи | Muse Beauty</title>
+  <meta name="description" content="Адреса салонов Muse Beauty и Healthy Hair в центре Сочи: ул. Навагинская 15/9 и Навагинская 5/2. Телефоны, часы работы, онлайн-запись YClients.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
+</head>
+<body>
+
+{build_header("contacts.html")}
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">📍 Мы на карте Сочи</div>
+        <h1 class="hero-title">Контакты &amp; Запись в Салон</h1>
+        <p class="hero-subtitle">Ждем вас ежедневно в наших уютных студиях на пешеходной улице Навагинская в центре Сочи.</p>
+        <div class="hero-cta-group">
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Выбрать время в YClients</a>
+          <a href="https://wa.me/79885088488" target="_blank" rel="noopener" class="btn btn-outline">Написать в WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/generated.jpg" alt="Атмосфера студии Muse Beauty Сочи" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <h2 class="contact-branch-title">📍 Студия Muse Beauty</h2>
+          <div class="contact-detail-list">
+            <div class="contact-item">
+              <strong>Адрес:</strong> г. Сочи, ул. Навагинская, д. 15/9 (напротив ТЦ Атриум)
+            </div>
+            <div class="contact-item">
+              <strong>Телефон:</strong> <a href="tel:+79885088488" class="text-accent">+7 (988) 508-84-88</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong> musebeauty.mir@mail.ru
+            </div>
+            <div class="contact-item">
+              <strong>Режим работы:</strong> Ежедневно с 10:00 до 20:00
+            </div>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться онлайн</a>
+        </div>
+
+        <div class="contact-card">
+          <h2 class="contact-branch-title">🌿 Healthy Hair &amp; Muse</h2>
+          <div class="contact-detail-list">
+            <div class="contact-item">
+              <strong>Адрес:</strong> г. Сочи, ул. Навагинская, д. 5/2 (2 этаж)
+            </div>
+            <div class="contact-item">
+              <strong>Телефон:</strong> <a href="tel:+79663355770" class="text-accent">+7 (966) 335-57-70</a>
+            </div>
+            <div class="contact-item">
+              <strong>Партнерский сайт:</strong> <a href="https://healthyhairfamily.ru/" target="_blank" rel="noopener" class="text-accent">healthyhairfamily.ru</a>
+            </div>
+            <div class="contact-item">
+              <strong>Режим работы:</strong> Ежедневно с 10:00 до 20:00
+            </div>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-outline">Записаться онлайн</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{build_footer()}
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>"""
+
+files_dict = {
+    "index.html": index_content,
+    "lashes.html": lashes_content,
+    "brows.html": brows_content,
+    "nails.html": nails_content,
+    "luxhair.html": luxhair_content,
+    "hair.html": hair_content,
+    "makeup.html": makeup_content,
+    "contacts.html": contacts_content
+}
 
 for fname, content in files_dict.items():
     with open(fname, "w", encoding="utf-8") as f:
         f.write(content)
 
-print(f"Successfully generated all {len(files_dict)} HTML pages with v2 cache-busted image filenames!")
+print(f"Successfully generated all {len(files_dict)} fully-featured subpages with rich galleries and advantage bars!")
