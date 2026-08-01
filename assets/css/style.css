@@ -239,7 +239,7 @@ button, input, select, textarea {
   background: transparent;
   border: 1px solid var(--border);
   cursor: pointer;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -247,6 +247,8 @@ button, input, select, textarea {
   padding: 8px;
   border-radius: var(--radius-sm);
   flex-shrink: 0;
+  z-index: 1001;
+  position: relative;
 }
 
 .burger-line {
@@ -276,6 +278,10 @@ button, input, select, textarea {
 
   .header-actions .btn-sm {
     display: none !important;
+  }
+
+  .burger-btn {
+    display: flex !important;
   }
 
   .main-nav {
