@@ -84,7 +84,7 @@ def build_footer():
     </div>
   </footer>"""
 
-# 1. INDEX.HTML
+# INDEX.HTML
 index_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -144,7 +144,7 @@ index_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <!-- SERVICES OVERVIEW SECTION (100% ACCURATE CATEGORY IMAGES) -->
+  <!-- SERVICES OVERVIEW SECTION (100% CACHE-BUSTED ACCURATE V2 IMAGES) -->
   <section class="section section-bg" id="services">
     <div class="container">
       <div class="section-header">
@@ -155,7 +155,7 @@ index_content = f"""<!DOCTYPE html>
       <div class="categories-grid">
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/lashes_category.jpg" alt="Наращивание и ламинирование ресниц" loading="lazy">
+            <img src="./assets/img/v2_lashes.jpg" alt="Наращивание и ламинирование ресниц" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Ресницы</h3>
@@ -169,7 +169,7 @@ index_content = f"""<!DOCTYPE html>
 
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/brows_category.jpg" alt="Архитектура и ламинирование бровей" loading="lazy">
+            <img src="./assets/img/v2_brows.jpg" alt="Архитектура и ламинирование бровей" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Брови</h3>
@@ -183,7 +183,7 @@ index_content = f"""<!DOCTYPE html>
 
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/nails_category.jpg" alt="Маникюр и покрытие гель-лак" loading="lazy">
+            <img src="./assets/img/v2_nails.jpg" alt="Маникюр и покрытие гель-лак" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Ногтевой сервис</h3>
@@ -197,7 +197,7 @@ index_content = f"""<!DOCTYPE html>
 
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/luxhair_category.jpg" alt="Спа-уход и восстановление волос" loading="lazy">
+            <img src="./assets/img/v2_luxhair.jpg" alt="Спа-уход и восстановление волос" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Уходы Luxhair</h3>
@@ -211,7 +211,7 @@ index_content = f"""<!DOCTYPE html>
 
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/hair_category.jpg" alt="Парикмахерский зал и окрашивание Airtouch" loading="lazy">
+            <img src="./assets/img/v2_hair.jpg" alt="Парикмахерский зал и окрашивание Airtouch" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Парикмахерская</h3>
@@ -225,7 +225,7 @@ index_content = f"""<!DOCTYPE html>
 
         <article class="category-card">
           <div class="category-thumb">
-            <img src="./assets/img/makeup_category.jpg" alt="Профессиональный макияж и визаж" loading="lazy">
+            <img src="./assets/img/v2_makeup.jpg" alt="Профессиональный макияж и визаж" loading="lazy">
           </div>
           <div class="category-content">
             <h3 class="category-title">Макияж &amp; Образы</h3>
@@ -321,12 +321,12 @@ index_content = f"""<!DOCTYPE html>
 
 # SUBPAGES
 subpages_data = {
-    "lashes.html": ("lashes_category.jpg", "Наращивание и Ламинирование Ресниц в Сочи | Muse Beauty", "Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Прайс-лист, фото работ и онлайн-запись.", "👁️ Эстетика взгляда", "Наращивание и Ламинирование Ресниц", "Легкое, комфортное ношение до 6 недель. Гипоаллергенные премиум-материалы, подбор изгиба и объема под форму ваших глаз.", "Онлайн запись на ресницы"),
-    "brows.html": ("brows_category.jpg", "Оформление и Ламинирование Бровей в Сочи | Muse Beauty", "Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.", "✨ Архитектура бровей", "Идеальная форма и уход для ваших бровей", "Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.", "Онлайн запись на брови"),
-    "nails.html": ("nails_category.jpg", "Маникюр и Педикюр в Сочи | Muse Beauty", "Аппаратный и комбинированный маникюр, педикюр, покрытие гель-лак, наращивание ногтей гель/акригель и дизайн в Сочи на Навагинской.", "💅 Эстетика ногтей", "Маникюр & Педикюр премиум класса", "Стерильный инструментарий в крафт-пакетах, чистый аппаратный маникюр, стойкое покрытие гель-лаком и моделирование ногтей.", "Онлайн запись на маникюр"),
-    "luxhair.html": ("luxhair_category.jpg", "Уходы за Волосами Luxhair & Lebel в Сочи | Muse Beauty", "Ботокс для волос, кератин, нанопластика, спа-комплекс «Счастье для волос» Lebel и холодное восстановление в студии Healthy Hair & Muse Beauty Сочи.", "🌿 Здоровые & Сияющие волосы", "Уходы Luxhair & Реконструкция Волос", "Глубокое спа-восстановление, кератиновое выпрямление, ботокс и профессиональные японские протоколы Lebel для поврежденных волос.", "Онлайн запись на уход"),
-    "hair.html": ("hair_category.jpg", "Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty", "Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.", "✂️ Колористика & Стрижки", "Парикмахерский Зал & Сложные Окрашивания", "Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.", "Онлайн запись к стилисту"),
-    "makeup.html": ("makeup_category.jpg", "Макияж и Праздничные Образы в Сочи | Muse Beauty", "Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской.", "💄 Профессиональный визаж", "Макияж & Создание Образов", "Стойкий макияж для съемок, вечерних выходов и свадеб. Возможность параллельного сбора в 4 руки (макияж + укладка) за 1.5 часа.", "Онлайн запись на макияж"),
+    "lashes.html": ("v2_lashes.jpg", "Наращивание и Ламинирование Ресниц в Сочи | Muse Beauty", "Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Прайс-лист, фото работ и онлайн-запись.", "👁️ Эстетика взгляда", "Наращивание и Ламинирование Ресниц", "Легкое, комфортное ношение до 6 недель. Гипоаллергенные премиум-материалы, подбор изгиба и объема под форму ваших глаз.", "Онлайн запись на ресницы"),
+    "brows.html": ("v2_brows.jpg", "Оформление и Ламинирование Бровей в Сочи | Muse Beauty", "Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.", "✨ Архитектура бровей", "Идеальная форма и уход для ваших бровей", "Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.", "Онлайн запись на брови"),
+    "nails.html": ("v2_nails.jpg", "Маникюр и Педикюр в Сочи | Muse Beauty", "Аппаратный и комбинированный маникюр, педикюр, покрытие гель-лак, наращивание ногтей гель/акригель и дизайн в Сочи на Навагинской.", "💅 Эстетика ногтей", "Маникюр & Педикюр премиум класса", "Стерильный инструментарий в крафт-пакетах, чистый аппаратный маникюр, стойкое покрытие гель-лаком и моделирование ногтей.", "Онлайн запись на маникюр"),
+    "luxhair.html": ("v2_luxhair.jpg", "Уходы за Волосами Luxhair & Lebel в Сочи | Muse Beauty", "Ботокс для волос, кератин, нанопластика, спа-комплекс «Счастье для волос» Lebel и холодное восстановление в студии Healthy Hair & Muse Beauty Сочи.", "🌿 Здоровые & Сияющие волосы", "Уходы Luxhair & Реконструкция Волос", "Глубокое спа-восстановление, кератиновое выпрямление, ботокс и профессиональные японские протоколы Lebel для поврежденных волос.", "Онлайн запись на уход"),
+    "hair.html": ("v2_hair.jpg", "Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty", "Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.", "✂️ Колористика & Стрижки", "Парикмахерский Зал & Сложные Окрашивания", "Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.", "Онлайн запись к стилисту"),
+    "makeup.html": ("v2_makeup.jpg", "Макияж и Праздничные Образы в Сочи | Muse Beauty", "Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской.", "💄 Профессиональный визаж", "Макияж & Создание Образов", "Стойкий макияж для съемок, вечерних выходов и свадеб. Возможность параллельного сбора в 4 руки (макияж + укладка) за 1.5 часа.", "Онлайн запись на макияж"),
     "contacts.html": ("generated.jpg", "Контакты и Адреса Филиалов в Сочи | Muse Beauty", "Адреса салонов Muse Beauty и Healthy Hair в центре Сочи: ул. Навагинская 15/9 и Навагинская 5/2. Телефоны, часы работы, онлайн-запись YClients.", "📍 Мы на карте Сочи", "Контакты & Запись в Салон", "Ждем вас ежедневно в наших уютных студиях на пешеходной улице Навагинская в центре Сочи.", "Выбрать время в YClients")
 }
 
@@ -374,4 +374,4 @@ for fname, content in files_dict.items():
     with open(fname, "w", encoding="utf-8") as f:
         f.write(content)
 
-print(f"Successfully generated all {len(files_dict)} HTML pages with 100% accurate, professional category photos!")
+print(f"Successfully generated all {len(files_dict)} HTML pages with v2 cache-busted image filenames!")
