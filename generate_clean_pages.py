@@ -1357,19 +1357,19 @@ makeup_content = f"""<!DOCTYPE html>
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="./assets/img/F09AB9EC-4715-4CE5-8.jpeg" alt="Вечерний макияж Смоки" loading="lazy">
+          <img src="./assets/img/v3_makeup_gal_1.jpg" alt="Палетка и инструменты визажиста" loading="lazy">
           <div class="gallery-caption">Вечерний макияж</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/441C87DB-1796-4122-8.jpeg" alt="Дневной Nude макияж" loading="lazy">
+          <img src="./assets/img/v3_makeup_gal_2.jpg" alt="Кисти для профессионального макияжа" loading="lazy">
           <div class="gallery-caption">Дневной Nude макияж</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/CFA297DD-A8F4-471D-B.jpeg" alt="Образ для фотосессий" loading="lazy">
+          <img src="./assets/img/v3_makeup_gal_3.jpg" alt="Косметика для создания образа" loading="lazy">
           <div class="gallery-caption">Образ для фотосессии</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/9E335A47-6E57-4C87-8.jpeg" alt="Свадебный макияж визаж" loading="lazy">
+          <img src="./assets/img/v3_makeup_gal_4.jpg" alt="Визажист за работой" loading="lazy">
           <div class="gallery-caption">Свадебный макияж</div>
         </div>
       </div>
