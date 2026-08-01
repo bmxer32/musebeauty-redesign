@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оформление и Ламинирование Бровей в Сочи | Muse Beauty</title>
-  <meta name="description" content="Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.">
+  <meta name="description" content="Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Демо прайса и запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -55,7 +55,7 @@
         <p class="hero-subtitle">Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на брови</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -90,11 +90,49 @@
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист на Брови</h2>
-        <p class="section-subtitle">Профессиональный уход для идеальной симметрии и формы</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте точную стоимость и время процедуры</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор архитектуры бровей</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите услугу:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="brow_service" data-price="700" data-time="30">Коррекция воском/пинцетом (700 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="800" data-time="30">Окрашивание краской/хной (800 ₽)</div>
+            <div class="demo-opt is-selected" data-group="brow_service" data-price="1300" data-time="45">Комплекс Коррекция + Окрашивание (1 300 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="2200" data-time="60">Ламинирование (укладка) бровей (2 200 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="2800" data-time="75">Полный комплекс + Счастье для бровей (2 800 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Дополнительные опции:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-price="600" data-time="20">Осветление бровей (+600 ₽)</div>
+            <div class="demo-opt" data-price="500" data-time="15">Ботокс-маска для бровей (+500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая стоимость и время:</div>
+            <div class="demo-total-price">1 300 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~45 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty</title>
-  <meta name="description" content="Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.">
+  <meta name="description" content="Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Демо прайса и запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -55,7 +55,7 @@
         <p class="hero-subtitle">Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться к стилисту</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -90,11 +90,50 @@
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист Парикмахерского Зала</h2>
-        <p class="section-subtitle">Работа на премиальных красителях с сохранением качества волос</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте точную стоимость стрижки или окрашивания</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор услуг стилиста-колориста</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите услугу парикмахерского зала:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="hair_service" data-price="2000" data-time="60">Женская стрижка + Укладка (2 000 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="3500" data-time="90">Окрашивание в 1 тон (3 500 ₽)</div>
+            <div class="demo-opt is-selected" data-group="hair_service" data-price="6500" data-time="180">Сложный блонд Airtouch / Шатуш (6 500 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="2500" data-time="60">Тонирование волос (2 500 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="2000" data-time="45">Укладка / Серф-локоны (2 000 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Длина волос:</div>
+          <div class="demo-chips">
+            <div class="demo-opt is-selected" data-group="hair_len" data-price="0" data-time="0">До плеч (+0 ₽)</div>
+            <div class="demo-opt" data-group="hair_len" data-price="1000" data-time="30">До лопаток (+1 000 ₽)</div>
+            <div class="demo-opt" data-group="hair_len" data-price="2000" data-time="45">Ниже лопаток / Густые (+2 000 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая ориентировочная стоимость и время:</div>
+            <div class="demo-total-price">6 500 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~180 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">

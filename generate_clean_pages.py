@@ -319,14 +319,14 @@ index_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 2. LASHES.HTML
+# 2. LASHES.HTML WITH PRICE DEMO CALCULATOR
 lashes_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Наращивание и Ламинирование Ресниц в Сочи | Muse Beauty</title>
-  <meta name="description" content="Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Прайс-лист, фото работ и онлайн-запись.">
+  <meta name="description" content="Услуги профессионального наращивания и ламинирования ресниц в студии Muse Beauty Сочи. Классика, 2D, 3D, Голливуд. Демо прайса, фото работ и онлайн-запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -342,7 +342,7 @@ lashes_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Легкое, комфортное ношение до 6 недель. Гипоаллергенные премиум-материалы, индивидуальный подбор изгиба и объема под форму ваших глаз.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на ресницы</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -377,13 +377,52 @@ lashes_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист на Ресницы</h2>
-        <p class="section-subtitle">Точные цены без скрытых доплат. Процедура включает очищение и подготовку</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте точную стоимость и длительность процедуры прямо сейчас</p>
       </div>
 
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор ухода за ресницами</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите объем или уход:</div>
+          <div class="demo-chips">
+            <div class="demo-opt is-selected" data-group="volume" data-price="2200" data-time="90">Классика (2 200 ₽)</div>
+            <div class="demo-opt" data-group="volume" data-price="2500" data-time="105">2D Объем (2 500 ₽)</div>
+            <div class="demo-opt" data-group="volume" data-price="2800" data-time="120">3D Объем (2 800 ₽)</div>
+            <div class="demo-opt" data-group="volume" data-price="3200" data-time="135">Голливуд (3 200 ₽)</div>
+            <div class="demo-opt" data-group="volume" data-price="2500" data-time="60">Ламинирование + Уход (2 500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Дополнительные опции:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-price="400" data-time="20">Снятие чужой работы (+400 ₽)</div>
+            <div class="demo-opt" data-price="300" data-time="15">Эффект лучиков / Цветные ресницы (+300 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая стоимость и время:</div>
+            <div class="demo-total-price">2 200 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~90 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
+      </div>
+
+      <!-- DETAILED PRICE LIST TABLE -->
       <div class="price-table-wrapper">
         <div class="price-row">
           <div class="price-info">
@@ -459,14 +498,14 @@ lashes_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 3. BROWS.HTML
+# 3. BROWS.HTML WITH PRICE DEMO CALCULATOR
 brows_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оформление и Ламинирование Бровей в Сочи | Muse Beauty</title>
-  <meta name="description" content="Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Точные цены и запись.">
+  <meta name="description" content="Коррекция, окрашивание краской и хной, ламинирование и долговременная укладка бровей в Сочи в салоне Muse Beauty на Навагинской. Демо прайса и запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -482,7 +521,7 @@ brows_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Архитектура, коррекция воском/пинцетом, профессиональное окрашивание и долговременная укладка с восстанавливающим уходом.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на брови</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -517,11 +556,49 @@ brows_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист на Брови</h2>
-        <p class="section-subtitle">Профессиональный уход для идеальной симметрии и формы</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте точную стоимость и время процедуры</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор архитектуры бровей</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите услугу:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="brow_service" data-price="700" data-time="30">Коррекция воском/пинцетом (700 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="800" data-time="30">Окрашивание краской/хной (800 ₽)</div>
+            <div class="demo-opt is-selected" data-group="brow_service" data-price="1300" data-time="45">Комплекс Коррекция + Окрашивание (1 300 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="2200" data-time="60">Ламинирование (укладка) бровей (2 200 ₽)</div>
+            <div class="demo-opt" data-group="brow_service" data-price="2800" data-time="75">Полный комплекс + Счастье для бровей (2 800 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Дополнительные опции:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-price="600" data-time="20">Осветление бровей (+600 ₽)</div>
+            <div class="demo-opt" data-price="500" data-time="15">Ботокс-маска для бровей (+500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая стоимость и время:</div>
+            <div class="demo-total-price">1 300 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~45 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">
@@ -599,7 +676,7 @@ brows_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 4. NAILS.HTML
+# 4. NAILS.HTML WITH PRICE DEMO CALCULATOR
 nails_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -622,7 +699,7 @@ nails_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Стерильный инструментарий в крафт-пакетах, чистый аппаратный маникюр, стойкое покрытие гель-лаком и моделирование ногтей.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на маникюр</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -657,11 +734,50 @@ nails_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист Ногтевого Сервиса</h2>
-        <p class="section-subtitle">Качественные материалы, абсолютная безопасность и безупречный результат</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Выберите вариант покрытия и дизайн для расчета стоимости</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор ногтевого сервиса</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Основная процедура:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="nail_service" data-price="1200" data-time="45">Маникюр гигиена (1 200 ₽)</div>
+            <div class="demo-opt is-selected" data-group="nail_service" data-price="2100" data-time="75">Маникюр + Гель-лак (2 100 ₽)</div>
+            <div class="demo-opt" data-group="nail_service" data-price="2300" data-time="90">Снятие + Маникюр + Гель-лак (2 300 ₽)</div>
+            <div class="demo-opt" data-group="nail_service" data-price="2800" data-time="90">Педикюр полный + Гель-лак (2 800 ₽)</div>
+            <div class="demo-opt" data-group="nail_service" data-price="3500" data-time="120">Наращивание ногтей (3 500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Дизайн и укрепление:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-price="400" data-time="20">Французский маникюр Френч (+400 ₽)</div>
+            <div class="demo-opt" data-price="500" data-time="20">Укрепление ногтей гелем/акригелем (+500 ₽)</div>
+            <div class="demo-opt" data-price="300" data-time="15">Втирка / Градиент (+300 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая стоимость и время:</div>
+            <div class="demo-total-price">2 100 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~75 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">
@@ -746,7 +862,7 @@ nails_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 5. LUXHAIR.HTML
+# 5. LUXHAIR.HTML WITH PRICE DEMO CALCULATOR
 luxhair_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -769,7 +885,7 @@ luxhair_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Глубокое спа-восстановление, кератиновое выпрямление, ботокс и профессиональные японские протоколы Lebel для поврежденных волос.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на уход</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -804,11 +920,50 @@ luxhair_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист на Процедуры Luxhair</h2>
-        <p class="section-subtitle">Оздоровление и плотность волос с накопительным эффектом</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте стоимость ухода в зависимости от длины ваших волос</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор реконструкции волос</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите состав или спа-программу:</div>
+          <div class="demo-chips">
+            <div class="demo-opt is-selected" data-group="lux_proc" data-price="3500" data-time="90">Ботокс для волос (от 3 500 ₽)</div>
+            <div class="demo-opt" data-group="lux_proc" data-price="4000" data-time="120">Кератиновое выпрямление (от 4 000 ₽)</div>
+            <div class="demo-opt" data-group="lux_proc" data-price="4500" data-time="120">Нанопластика волос (от 4 500 ₽)</div>
+            <div class="demo-opt" data-group="lux_proc" data-price="3000" data-time="60">Спа-уход «Счастье для волос» Lebel (3 000 ₽)</div>
+            <div class="demo-opt" data-group="lux_proc" data-price="2800" data-time="60">Холодное восстановление блондок (2 800 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Длина волос:</div>
+          <div class="demo-chips">
+            <div class="demo-opt is-selected" data-group="lux_len" data-price="0" data-time="0">Короткие / До плеч (+0 ₽)</div>
+            <div class="demo-opt" data-group="lux_len" data-price="800" data-time="20">Средняя длина / До лопаток (+800 ₽)</div>
+            <div class="demo-opt" data-group="lux_len" data-price="1500" data-time="30">Длинные / Ниже лопаток (+1 500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая ориентировочная стоимость и время:</div>
+            <div class="demo-total-price">3 500 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~90 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">
@@ -886,14 +1041,14 @@ luxhair_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 6. HAIR.HTML
+# 6. HAIR.HTML WITH PRICE DEMO CALCULATOR
 hair_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Парикмахерский Зал & Окрашивание в Сочи | Muse Beauty</title>
-  <meta name="description" content="Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Точные цены и запись к тонировщикам и стилистам.">
+  <meta name="description" content="Стрижки, сложные окрашивания Airtouch, Шатуш, Балаяж, тонирование и укладки в центре Сочи на Навагинской. Демо прайса и запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -909,7 +1064,7 @@ hair_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Создание плавно растушеванного блонда Airtouch, женские стрижки любой сложности и идеальное уходовое тонирование.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться к стилисту</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -944,11 +1099,50 @@ hair_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист Парикмахерского Зала</h2>
-        <p class="section-subtitle">Работа на премиальных красителях с сохранением качества волос</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Рассчитайте точную стоимость стрижки или окрашивания</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор услуг стилиста-колориста</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите услугу парикмахерского зала:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="hair_service" data-price="2000" data-time="60">Женская стрижка + Укладка (2 000 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="3500" data-time="90">Окрашивание в 1 тон (3 500 ₽)</div>
+            <div class="demo-opt is-selected" data-group="hair_service" data-price="6500" data-time="180">Сложный блонд Airtouch / Шатуш (6 500 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="2500" data-time="60">Тонирование волос (2 500 ₽)</div>
+            <div class="demo-opt" data-group="hair_service" data-price="2000" data-time="45">Укладка / Серф-локоны (2 000 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">2. Длина волос:</div>
+          <div class="demo-chips">
+            <div class="demo-opt is-selected" data-group="hair_len" data-price="0" data-time="0">До плеч (+0 ₽)</div>
+            <div class="demo-opt" data-group="hair_len" data-price="1000" data-time="30">До лопаток (+1 000 ₽)</div>
+            <div class="demo-opt" data-group="hair_len" data-price="2000" data-time="45">Ниже лопаток / Густые (+2 000 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая ориентировочная стоимость и время:</div>
+            <div class="demo-total-price">6 500 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~180 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">
@@ -1026,14 +1220,14 @@ hair_content = f"""<!DOCTYPE html>
 </body>
 </html>"""
 
-# 7. MAKEUP.HTML
+# 7. MAKEUP.HTML WITH PRICE DEMO CALCULATOR
 makeup_content = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Макияж и Праздничные Образы в Сочи | Muse Beauty</title>
-  <meta name="description" content="Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской.">
+  <meta name="description" content="Дневной nude макияж, вечерний макияж, свадебные образы и полные сборы в 4 руки в Сочи в салоне Muse Beauty на Навагинской. Демо прайса и запись.">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/5AA1398A-7545-4FC2-B.png">
 </head>
@@ -1049,7 +1243,7 @@ makeup_content = f"""<!DOCTYPE html>
         <p class="hero-subtitle">Стойкий макияж для съемок, вечерних выходов и свадеб. Возможность параллельного сбора в 4 руки (макияж + укладка) за 1.5 часа.</p>
         <div class="hero-cta-group">
           <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на макияж</a>
-          <a href="#prices" class="btn btn-outline">Прайс-лист</a>
+          <a href="#demo-calculator" class="btn btn-outline">Демо прайса &amp; Калькулятор</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -1084,11 +1278,40 @@ makeup_content = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="section" id="prices">
+  <!-- INTERACTIVE DEMO PRICE CALCULATOR SECTION -->
+  <section class="section" id="demo-calculator">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Прайс-лист на Визаж</h2>
-        <p class="section-subtitle">Индивидуальный образ под мероприятия и фотосессии</p>
+        <h2 class="section-title">⚡ Интерактивное Демо Прайса</h2>
+        <p class="section-subtitle">Выберите вариант макияжа или сборов для расчета стоимости</p>
+      </div>
+
+      <div class="price-demo-card" data-price-demo>
+        <div class="price-demo-header">
+          <div class="demo-title">Калькулятор визажа и сборов</div>
+          <span class="demo-badge">Онлайн-расчёт YClients</span>
+        </div>
+
+        <div class="demo-group">
+          <div class="demo-group-label">1. Выберите вариант образа:</div>
+          <div class="demo-chips">
+            <div class="demo-opt" data-group="mu_service" data-price="2500" data-time="45">Дневной Nude макияж (2 500 ₽)</div>
+            <div class="demo-opt is-selected" data-group="mu_service" data-price="3500" data-time="60">Вечерний / Смоки макияж (3 500 ₽)</div>
+            <div class="demo-opt" data-group="mu_service" data-price="4500" data-time="75">Свадебный макияж (4 500 ₽)</div>
+            <div class="demo-opt" data-group="mu_service" data-price="5500" data-time="90">Образ в 4 руки: Макияж + Укладка (5 500 ₽)</div>
+          </div>
+        </div>
+
+        <div class="demo-result-bar">
+          <div>
+            <div class="demo-total-label">Итоговая стоимость и время:</div>
+            <div class="demo-total-price">3 500 ₽</div>
+          </div>
+          <div>
+            <span class="demo-total-time">⏳ ~60 мин</span>
+          </div>
+          <a href="https://n581246.yclients.com/company/549326/personal/menu" target="_blank" rel="noopener" class="btn btn-primary">Записаться на этот расчет</a>
+        </div>
       </div>
 
       <div class="price-table-wrapper">
@@ -1256,4 +1479,4 @@ for fname, content in files_dict.items():
     with open(fname, "w", encoding="utf-8") as f:
         f.write(content)
 
-print(f"Successfully generated all {len(files_dict)} fully-featured subpages with rich galleries and advantage bars!")
+print(f"Successfully generated all {len(files_dict)} HTML pages with interactive Price Demo Calculators!")

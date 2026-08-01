@@ -24,8 +24,8 @@
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Layout */
-  --container-max: 1240px;
-  --header-height: 70px;
+  --container-max: 1180px;
+  --header-height: 72px;
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -78,10 +78,16 @@ button, input, select, textarea {
   font: inherit;
 }
 
-/* Container */
+/* Container — Generous Spacing Away From Screen Edges */
 .container {
-  width: min(100% - 32px, var(--container-max));
+  width: min(100% - 48px, var(--container-max));
   margin-inline: auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: min(100% - 32px, 100%);
+  }
 }
 
 /* Header & Navigation */
@@ -90,9 +96,9 @@ button, input, select, textarea {
   top: 0;
   z-index: 1000;
   height: var(--header-height);
-  background: rgba(250, 249, 246, 0.97);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(250, 249, 246, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -102,7 +108,7 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
   width: 100%;
   height: 100%;
   flex-wrap: nowrap;
@@ -112,20 +118,23 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-  color: var(--text-main);
+  text-decoration: none;
   flex-shrink: 0;
-  white-space: nowrap;
 }
 
-.brand-logo img {
+.logo-img {
   height: 36px;
   width: auto;
   object-fit: contain;
-  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  color: var(--text-main);
+  white-space: nowrap;
 }
 
 .header-actions {
@@ -140,16 +149,16 @@ button, input, select, textarea {
   .main-nav {
     display: flex;
     align-items: center;
-    gap: clamp(10px, 1.2vw, 20px);
+    gap: clamp(12px, 1.4vw, 24px);
     flex-wrap: nowrap;
   }
 
   .nav-link {
     font-weight: 600;
-    font-size: clamp(0.875rem, 0.75vw + 0.5rem, 0.95rem);
+    font-size: 0.95rem;
     color: var(--text-main);
     transition: color var(--transition-fast);
-    padding: 6px 4px;
+    padding: 6px 2px;
     position: relative;
     white-space: nowrap;
   }
@@ -161,7 +170,7 @@ button, input, select, textarea {
   .nav-link.is-active::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
     right: 0;
     height: 2px;
@@ -219,7 +228,7 @@ button, input, select, textarea {
 
 .btn-sm {
   min-height: 38px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   font-size: 0.875rem;
 }
 
@@ -262,21 +271,25 @@ button, input, select, textarea {
 /* Mobile Nav Overlay Drawer (< 1024px) */
 @media (max-width: 1023px) {
   .site-header {
-    height: 60px;
+    height: 64px;
+  }
+
+  .header-actions .btn-sm {
+    display: none !important;
   }
 
   .main-nav {
     position: fixed;
-    top: 60px;
+    top: 64px;
     left: 0;
     right: 0;
     bottom: 0;
     background: var(--bg-primary);
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
-    padding: 24px 20px;
-    gap: 16px;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 8px;
     display: none;
     overflow-y: auto;
     border-top: 1px solid var(--border);
@@ -284,15 +297,16 @@ button, input, select, textarea {
   }
 
   .main-nav.is-open {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-link {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    width: 100%;
-    padding: 14px 8px;
+    color: var(--text-main);
+    padding: 14px 12px;
     border-bottom: 1px solid var(--border);
+    display: block;
   }
 
   .mobile-menu-footer {
@@ -542,7 +556,117 @@ button, input, select, textarea {
   font-size: 1rem;
 }
 
-/* Price List Tables / Cards */
+/* INTERACTIVE PRICE DEMO WIDGET */
+.price-demo-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border);
+  padding: clamp(24px, 4vw, 36px);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 40px;
+}
+
+.price-demo-header {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+}
+
+.demo-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--text-main);
+}
+
+.demo-badge {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.demo-group {
+  margin-bottom: 24px;
+}
+
+.demo-group-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.demo-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.demo-opt {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.demo-opt:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.demo-opt.is-selected {
+  background: var(--text-main);
+  color: #FFFFFF;
+  border-color: var(--text-main);
+}
+
+.demo-result-bar {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.demo-total-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.demo-total-price {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.demo-total-time {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+/* Price List Tables */
 .price-table-wrapper {
   background: var(--bg-card);
   border-radius: var(--radius-md);
@@ -587,7 +711,7 @@ button, input, select, textarea {
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--accent);
-  white-space: normal;
+  white-space: nowrap;
   text-align: right;
 }
 
@@ -672,14 +796,6 @@ button, input, select, textarea {
   align-items: flex-start;
   gap: 12px;
   font-size: 0.95rem;
-}
-
-.contact-item svg {
-  width: 20px;
-  height: 20px;
-  color: var(--accent);
-  flex-shrink: 0;
-  margin-top: 2px;
 }
 
 /* Footer */
