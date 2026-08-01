@@ -250,20 +250,20 @@ index_content = f"""<!DOCTYPE html>
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="./assets/img/noroot.png" alt="Уютная лаундж зона салона Muse Beauty Сочи" loading="lazy">
-          <div class="gallery-caption">Атмосфера лаунджа</div>
+          <img src="./assets/img/v3_main_interior_1.jpg" alt="Интерьер салона Muse Beauty Сочи" loading="lazy">
+          <div class="gallery-caption">Атмосфера студии</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/294079F4-F2D6-40CD-9.jpeg" alt="Рабочее пространство студии" loading="lazy">
-          <div class="gallery-caption">Пространство студии</div>
+          <img src="./assets/img/209E1C9C-5C52-4141-9.jpeg" alt="Мастер за работой в студии" loading="lazy">
+          <div class="gallery-caption">Мастер за работой</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/4BA72AEE-E5E5-41B0-A.jpeg" alt="Рабочие места мастеров" loading="lazy">
-          <div class="gallery-caption">Комфортный сервис</div>
+          <img src="./assets/img/v3_main_interior_2.jpg" alt="Рабочее место мастера" loading="lazy">
+          <div class="gallery-caption">Рабочее пространство</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/image_-1.png" alt="Зона встречи гостей и ресепшн" loading="lazy">
-          <div class="gallery-caption">Зона ресепшн</div>
+          <img src="./assets/img/2558E8CB-F90B-4B83-A.jpeg" alt="Премиальная косметика и уход" loading="lazy">
+          <div class="gallery-caption">Премиальная косметика</div>
         </div>
       </div>
     </div>
@@ -845,11 +845,11 @@ nails_content = f"""<!DOCTYPE html>
           <div class="gallery-caption">Французский маникюр Френч</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/v2_nails_gal_3.jpg" alt="Аппаратный маникюр и дизайн" loading="lazy">
+          <img src="./assets/img/v3_nails_gal_3.jpg" alt="Дизайнерский маникюр" loading="lazy">
           <div class="gallery-caption">Аппаратный маникюр</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/v2_nails_gal_4.jpg" alt="Покрытие гель-лак" loading="lazy">
+          <img src="./assets/img/v3_nails_gal_4.jpg" alt="Мастер делает маникюр" loading="lazy">
           <div class="gallery-caption">Стойкое покрытие гель-лак</div>
         </div>
       </div>
@@ -1199,7 +1199,7 @@ hair_content = f"""<!DOCTYPE html>
           <div class="gallery-caption">Сложный блонд Airtouch</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/209E1C9C-5C52-4141-9.jpeg" alt="Окрашивание и укладка волос" loading="lazy">
+          <img src="./assets/img/muse_img_24.jpg" alt="Окрашивание и укладка волос" loading="lazy">
           <div class="gallery-caption">Окрашивание &amp; Укладка</div>
         </div>
         <div class="gallery-item">
