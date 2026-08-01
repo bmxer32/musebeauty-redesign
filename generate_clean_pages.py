@@ -659,11 +659,11 @@ brows_content = f"""<!DOCTYPE html>
           <div class="gallery-caption">Архитектура &amp; Окрашивание</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/51FC2374-2DAE-4FDA-9.jpeg" alt="Коррекция формы бровей" loading="lazy">
+          <img src="./assets/img/v2_brows_gal_3.jpg" alt="Коррекция формы бровей" loading="lazy">
           <div class="gallery-caption">Коррекция воском/пинцетом</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/CF9B0EE0-51FE-4E0A-A.webp" alt="Комплексный уход бровей" loading="lazy">
+          <img src="./assets/img/v2_brows_gal_4.jpg" alt="Комплексный уход бровей" loading="lazy">
           <div class="gallery-caption">Комплекс «Счастье для бровей»</div>
         </div>
       </div>
@@ -845,11 +845,11 @@ nails_content = f"""<!DOCTYPE html>
           <div class="gallery-caption">Французский маникюр Френч</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/24E4ADBA-B26A-422E-9.jpeg" alt="Аппаратный маникюр и дизайн" loading="lazy">
+          <img src="./assets/img/v2_nails_gal_3.jpg" alt="Аппаратный маникюр и дизайн" loading="lazy">
           <div class="gallery-caption">Аппаратный маникюр</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/3B52DDCC-3A98-424D-B.webp" alt="Покрытие гель-лак" loading="lazy">
+          <img src="./assets/img/v2_nails_gal_4.jpg" alt="Покрытие гель-лак" loading="lazy">
           <div class="gallery-caption">Стойкое покрытие гель-лак</div>
         </div>
       </div>
@@ -1195,7 +1195,7 @@ hair_content = f"""<!DOCTYPE html>
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="./assets/img/A0C70495-F617-43CF-B.jpeg" alt="Airtouch сложный блонд" loading="lazy">
+          <img src="./assets/img/v2_hair_gal_1.jpg" alt="Airtouch сложный блонд" loading="lazy">
           <div class="gallery-caption">Сложный блонд Airtouch</div>
         </div>
         <div class="gallery-item">
@@ -1203,11 +1203,11 @@ hair_content = f"""<!DOCTYPE html>
           <div class="gallery-caption">Окрашивание &amp; Укладка</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/5AF19170-D201-432E-B.jpeg" alt="Тонирование и локоны" loading="lazy">
+          <img src="./assets/img/v2_hair_gal_3.jpg" alt="Тонирование и локоны" loading="lazy">
           <div class="gallery-caption">Тонирование &amp; Серф-локоны</div>
         </div>
         <div class="gallery-item">
-          <img src="./assets/img/67F00D5B-3A34-4337-A.jpeg" alt="Женская стрижка и укладка" loading="lazy">
+          <img src="./assets/img/v2_hair_gal_4.jpg" alt="Женская стрижка и укладка" loading="lazy">
           <div class="gallery-caption">Женская стрижка по форме</div>
         </div>
       </div>
