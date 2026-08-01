@@ -102,6 +102,7 @@ button, input, select, textarea {
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-inner {
