@@ -1,0 +1,674 @@
+[
+  {
+    "file": "gallery-01.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15510144/2a00000194ccea0cdfcf754e817cc054c7fd/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15510144/2a00000194ccea0cdfcf754e817cc054c7fd/orig",
+    "bytes": 106298,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-02.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14329771/2a00000194ccea776474b520539f1dcd95be/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14329771/2a00000194ccea776474b520539f1dcd95be/orig",
+    "bytes": 126682,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-03.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13671440/2a00000194ccea7769dd1cf6ab71c377a750/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13671440/2a00000194ccea7769dd1cf6ab71c377a750/orig",
+    "bytes": 126308,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-04.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14381528/2a00000194ccea09a14d1477378f82ef7052/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14381528/2a00000194ccea09a14d1477378f82ef7052/orig",
+    "bytes": 113969,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-05.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13063086/2a00000194ccea09bd1c6cce88781e50cf62/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13063086/2a00000194ccea09bd1c6cce88781e50cf62/orig",
+    "bytes": 98533,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-06.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14235465/2a00000194523e43dc81a446ff33ecec510b/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14235465/2a00000194523e43dc81a446ff33ecec510b/orig",
+    "bytes": 353800,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-07.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14730529/2a00000194523df5effc00e407e2fdc9f844/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14730529/2a00000194523df5effc00e407e2fdc9f844/orig",
+    "bytes": 369562,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-08.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15022759/2a00000193fd82839a2624d59b5921114d78/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15022759/2a00000193fd82839a2624d59b5921114d78/orig",
+    "bytes": 385049,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-09.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194089a2c5ff722b9235ac8466766/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194089a2c5ff722b9235ac8466766/orig",
+    "bytes": 367119,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-10.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14920824/2a00000194089a2c1e940f084859fb2dc48f/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14920824/2a00000194089a2c1e940f084859fb2dc48f/orig",
+    "bytes": 568159,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-11.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14922087/2a00000193fd828405956629137d60f9e96c/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14922087/2a00000193fd828405956629137d60f9e96c/orig",
+    "bytes": 469734,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-12.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14578051/2a00000194523e3eef9ac525e61eee530eb7/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14578051/2a00000194523e3eef9ac525e61eee530eb7/orig",
+    "bytes": 374023,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-13.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13994056/2a00000194523e016fce8b1e5d93b67ec44a/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13994056/2a00000194523e016fce8b1e5d93b67ec44a/orig",
+    "bytes": 275731,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-14.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13941727/2a00000194523dfe9ef929055e5bb0069bc5/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13941727/2a00000194523dfe9ef929055e5bb0069bc5/orig",
+    "bytes": 242473,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-15.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14402637/2a00000194523e456bf4e1d3f19b52451f14/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14402637/2a00000194523e456bf4e1d3f19b52451f14/orig",
+    "bytes": 377852,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-16.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14731058/2a0000019407c363a24d9004d5ce0f53681f/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14731058/2a0000019407c363a24d9004d5ce0f53681f/orig",
+    "bytes": 787806,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-17.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14793643/2a0000019407c08468e056301b86423a6e37/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14793643/2a0000019407c08468e056301b86423a6e37/orig",
+    "bytes": 546219,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-18.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14312158/2a000001940889eb4e0e2d17fb3647a4ccf5/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14312158/2a000001940889eb4e0e2d17fb3647a4ccf5/orig",
+    "bytes": 748540,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-19.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14185024/2a00000194a95c37b22978072e4965ede796/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14185024/2a00000194a95c37b22978072e4965ede796/orig",
+    "bytes": 103458,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-20.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15405132/2a00000194cceb2752606e2528cb43d9e3ea/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15405132/2a00000194cceb2752606e2528cb43d9e3ea/orig",
+    "bytes": 329893,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-21.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14456919/2a00000194cceb27aed905edb1c085c016f9/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14456919/2a00000194cceb27aed905edb1c085c016f9/orig",
+    "bytes": 374023,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-22.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14317263/2a00000194cceb2e1a7efb3576515bfc0cdb/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14317263/2a00000194cceb2e1a7efb3576515bfc0cdb/orig",
+    "bytes": 487522,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-23.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15223195/2a00000194ccea0ccac870a11db3a6d18749/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15223195/2a00000194ccea0ccac870a11db3a6d18749/orig",
+    "bytes": 154522,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-24.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14396200/2a00000194ccea0c8a0a21f5cfe0e7d3f85e/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14396200/2a00000194ccea0c8a0a21f5cfe0e7d3f85e/orig",
+    "bytes": 145077,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-25.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14844975/2a00000194527cffb1aa017c9ac8d6fce4d0/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14844975/2a00000194527cffb1aa017c9ac8d6fce4d0/orig",
+    "bytes": 224012,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-26.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15397479/2a00000194ccea096377822b4ef52c10fb81/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15397479/2a00000194ccea096377822b4ef52c10fb81/orig",
+    "bytes": 146290,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-27.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14703533/2a00000194ccea09ca86a071c13f8171ddb6/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14703533/2a00000194ccea09ca86a071c13f8171ddb6/orig",
+    "bytes": 114964,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-28.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13604236/2a00000194ccea4f20f8cec79e9138b5f9b1/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13604236/2a00000194ccea4f20f8cec79e9138b5f9b1/orig",
+    "bytes": 181665,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-29.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13200126/2a00000194523e3e952f3bec52b08080aa1d/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13200126/2a00000194523e3e952f3bec52b08080aa1d/orig",
+    "bytes": 328362,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-30.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14098455/2a00000194523df7126f0205313a7f031574/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14098455/2a00000194523df7126f0205313a7f031574/orig",
+    "bytes": 316380,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-31.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13947802/2a00000194523df6be50ca5a7c348287d496/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13947802/2a00000194523df6be50ca5a7c348287d496/orig",
+    "bytes": 329893,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-32.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15081387/2a00000193fd8289405f44074a6d677b2d60/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15081387/2a00000193fd8289405f44074a6d677b2d60/orig",
+    "bytes": 320115,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-33.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15157522/2a00000193fd828405fd240395d7f35f6bd9/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15157522/2a00000193fd828405fd240395d7f35f6bd9/orig",
+    "bytes": 354962,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-34.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13786585/2a00000193fd8283ecc9625217840573243a/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13786585/2a00000193fd8283ecc9625217840573243a/orig",
+    "bytes": 417577,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-35.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14329771/2a00000194523dfe279336eb6e45c8017d45/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14329771/2a00000194523dfe279336eb6e45c8017d45/orig",
+    "bytes": 358518,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-36.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13609869/2a00000194523dff84692a7f8a0a79a4b3df/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13609869/2a00000194523dff84692a7f8a0a79a4b3df/orig",
+    "bytes": 478607,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-37.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13594632/2a00000194523e3eff067b4eb65a8ac3588c/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13594632/2a00000194523e3eff067b4eb65a8ac3588c/orig",
+    "bytes": 687837,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-38.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13941727/2a00000194523df7ab1db0f4f01dbf980ca6/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13941727/2a00000194523df7ab1db0f4f01dbf980ca6/orig",
+    "bytes": 251243,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-39.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15037708/2a00000194977d3bcbcace4fdbd2ba6c5395/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15037708/2a00000194977d3bcbcace4fdbd2ba6c5395/orig",
+    "bytes": 1633028,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-40.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15037708/2a0000019407c0f5caf7fb64d012005609db/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15037708/2a0000019407c0f5caf7fb64d012005609db/orig",
+    "bytes": 312804,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-41.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13786585/2a0000019407c363be2b84ecafa63edc1b46/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13786585/2a0000019407c363be2b84ecafa63edc1b46/orig",
+    "bytes": 767163,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-42.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15112342/2a0000019408871bb767ba60a6bb6f459cc0/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15112342/2a0000019408871bb767ba60a6bb6f459cc0/orig",
+    "bytes": 276656,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-43.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14800460/2a00000194a3fc0f0ed1e3efb5c7a0b19e6e/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14800460/2a00000194a3fc0f0ed1e3efb5c7a0b19e6e/orig",
+    "bytes": 117003,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-44.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194cceb2766f0560cb033eb29a499/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194cceb2766f0560cb033eb29a499/orig",
+    "bytes": 353800,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-45.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14393272/2a00000194cceb27c88dd75b7bdaeebdd79d/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14393272/2a00000194cceb27c88dd75b7bdaeebdd79d/orig",
+    "bytes": 328362,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-46.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14731058/2a00000194cceb2e3477b1e2f3b499cfc440/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14731058/2a00000194cceb2e3477b1e2f3b499cfc440/orig",
+    "bytes": 687837,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-47.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14763372/2a00000194527cff7d6eca90241c7d78e3c0/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14763372/2a00000194527cff7d6eca90241c7d78e3c0/orig",
+    "bytes": 296381,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-48.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14699088/2a00000194ccea09a1c503208db115bc2536/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14699088/2a00000194ccea09a1c503208db115bc2536/orig",
+    "bytes": 115602,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-49.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14563476/2a00000194ccea775a83df02fa01325bbf10/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14563476/2a00000194ccea775a83df02fa01325bbf10/orig",
+    "bytes": 217883,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-50.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15157522/2a00000194cce9860b502eb9f93548b5523c/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15157522/2a00000194cce9860b502eb9f93548b5523c/orig",
+    "bytes": 190722,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-51.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15081387/2a00000194523e3dde9806b08886508da530/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15081387/2a00000194523e3dde9806b08886508da530/orig",
+    "bytes": 442662,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-52.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14920824/2a00000194523e3ee1a65c50e87651b9e080/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14920824/2a00000194523e3ee1a65c50e87651b9e080/orig",
+    "bytes": 487522,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-53.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13671440/2a00000194523e47618cf0b9a410b1af917c/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13671440/2a00000194523e47618cf0b9a410b1af917c/orig",
+    "bytes": 414821,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-54.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14020851/2a00000194089a2c47330dcf54a3e8e4324b/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14020851/2a00000194089a2c47330dcf54a3e8e4324b/orig",
+    "bytes": 356516,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-55.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13220791/2a00000194523df7f7677eb16400c8191f66/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13220791/2a00000194523df7f7677eb16400c8191f66/orig",
+    "bytes": 495126,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-56.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14010724/2a00000193fd82836d0453bc9595ca2fd026/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14010724/2a00000193fd82836d0453bc9595ca2fd026/orig",
+    "bytes": 423200,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-57.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14221082/2a00000193fd8288faff5dabfa7efa984734/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14221082/2a00000193fd8288faff5dabfa7efa984734/orig",
+    "bytes": 591903,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-58.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14190752/2a00000194527cffd49b5521d2d6c5071080/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14190752/2a00000194527cffd49b5521d2d6c5071080/orig",
+    "bytes": 406753,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-59.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14392184/2a00000194523df731021a9b59a7f7f05f10/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14392184/2a00000194523df731021a9b59a7f7f05f10/orig",
+    "bytes": 314298,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-60.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14221082/2a00000194527cffe54b091860b892ac1f4b/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14221082/2a00000194527cffe54b091860b892ac1f4b/orig",
+    "bytes": 373437,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-61.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15032884/2a00000194523e3ec4cad123fb87fc03581d/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15032884/2a00000194523e3ec4cad123fb87fc03581d/orig",
+    "bytes": 384130,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-62.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13940652/2a00000194523dfd2d302275e0ae8a9da0cf/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13940652/2a00000194523dfd2d302275e0ae8a9da0cf/orig",
+    "bytes": 325973,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-63.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/11374564/2a0000019407c2d69bc12dddb065cbc5c929/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/11374564/2a0000019407c2d69bc12dddb065cbc5c929/orig",
+    "bytes": 339186,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-64.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/13063086/2a0000019407c3639dcd8805e786bb29b210/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/13063086/2a0000019407c3639dcd8805e786bb29b210/orig",
+    "bytes": 748222,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-65.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14376766/2a0000019407c36326b3b613a3cd684c3f50/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14376766/2a0000019407c36326b3b613a3cd684c3f50/orig",
+    "bytes": 801005,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-66.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15131175/2a00000194cd41b547eb0fad25a9810c5fe5/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15131175/2a00000194cd41b547eb0fad25a9810c5fe5/orig",
+    "bytes": 1105383,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-67.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14014133/2a00000194cceb279a6a9d7fc28a466ba556/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14014133/2a00000194cceb279a6a9d7fc28a466ba556/orig",
+    "bytes": 353800,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-68.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/15112342/2a00000194cceb28154ce909a474f3e64b7a/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/15112342/2a00000194cceb28154ce909a474f3e64b7a/orig",
+    "bytes": 442662,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-69.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14105192/2a00000194523e44c264eb07caf1c0cce87c/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14105192/2a00000194523e44c264eb07caf1c0cce87c/orig",
+    "bytes": 453853,
+    "size": "orig"
+  },
+  {
+    "file": "gallery-70.jpg",
+    "group": "gallery",
+    "source": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194ccea09b6252256a7194258d1b1/L",
+    "downloaded": "https://avatars.mds.yandex.net/get-altay/14295867/2a00000194ccea09b6252256a7194258d1b1/orig",
+    "bytes": 94643,
+    "size": "orig"
+  },
+  {
+    "file": "product-01.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/19253181/2a0000019d26bc36a5c4f18d36c21de10285/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/19253181/2a0000019d26bc36a5c4f18d36c21de10285/orig",
+    "bytes": 151302,
+    "size": "orig"
+  },
+  {
+    "file": "product-02.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/19253181/2a0000019d26cd28da4d8357da0f4dc8ddd5/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/19253181/2a0000019d26cd28da4d8357da0f4dc8ddd5/orig",
+    "bytes": 108222,
+    "size": "orig"
+  },
+  {
+    "file": "product-03.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd08ef3addfe9d74978e15dd/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd08ef3addfe9d74978e15dd/orig",
+    "bytes": 125143,
+    "size": "orig"
+  },
+  {
+    "file": "product-04.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd491a42ac7d0e364e6f3135/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd491a42ac7d0e364e6f3135/orig",
+    "bytes": 123101,
+    "size": "orig"
+  },
+  {
+    "file": "product-05.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd69b759b708dcbf236e2fcd/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cd69b759b708dcbf236e2fcd/orig",
+    "bytes": 134248,
+    "size": "orig"
+  },
+  {
+    "file": "product-06.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26cd8ab00e0e3e8cfde6353cc1/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26cd8ab00e0e3e8cfde6353cc1/orig",
+    "bytes": 126856,
+    "size": "orig"
+  },
+  {
+    "file": "product-07.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26cda756ce19ca9ea424f69dbb/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26cda756ce19ca9ea424f69dbb/orig",
+    "bytes": 134400,
+    "size": "orig"
+  },
+  {
+    "file": "product-08.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cdce9a034c76cae10efad673/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cdce9a034c76cae10efad673/orig",
+    "bytes": 124487,
+    "size": "orig"
+  },
+  {
+    "file": "product-09.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cde9c3948702e00182f3930e/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019d26cde9c3948702e00182f3930e/orig",
+    "bytes": 127899,
+    "size": "orig"
+  },
+  {
+    "file": "product-10.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/19861719/2a0000019d26ce04162bcf81487833ce2681/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/19861719/2a0000019d26ce04162bcf81487833ce2681/orig",
+    "bytes": 119617,
+    "size": "orig"
+  },
+  {
+    "file": "product-11.jpg",
+    "group": "product",
+    "source": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26d2a38b9b9f3453025f5c15aa/XXL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019d26d2a38b9b9f3453025f5c15aa/orig",
+    "bytes": 162052,
+    "size": "orig"
+  },
+  {
+    "file": "brand-01.jpg",
+    "group": "brand",
+    "source": "https://avatars.mds.yandex.net/get-maps-adv-crm/4771617/2a000001945eb24e8dc2fc9f451553f17bf5/landing_logo",
+    "downloaded": "https://avatars.mds.yandex.net/get-maps-adv-crm/4771617/2a000001945eb24e8dc2fc9f451553f17bf5/orig",
+    "bytes": 120993,
+    "size": "orig"
+  },
+  {
+    "file": "brand-02.jpg",
+    "group": "brand",
+    "source": "https://avatars.mds.yandex.net/get-maps-adv-crm/11387709/2a00000193fd8f2d273b2dafeb4ee061802a/landing_background",
+    "downloaded": "https://avatars.mds.yandex.net/get-maps-adv-crm/11387709/2a00000193fd8f2d273b2dafeb4ee061802a/orig",
+    "bytes": 624477,
+    "size": "orig"
+  },
+  {
+    "file": "brand-03.jpg",
+    "group": "brand",
+    "source": "https://avatars.mds.yandex.net/get-sprav-posts/17719886/2a0000019edabe6b6d01f7cd3fc7d94600e2/XL",
+    "downloaded": "https://avatars.mds.yandex.net/get-sprav-posts/17719886/2a0000019edabe6b6d01f7cd3fc7d94600e2/XXXL",
+    "bytes": 20114,
+    "size": "XXXL"
+  }
+]
