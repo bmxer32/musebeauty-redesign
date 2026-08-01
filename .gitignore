@@ -1,0 +1,5 @@
+salonflur-redesign/
+*.py
+*.txt
+*.json
+!downloaded_images_map.json
