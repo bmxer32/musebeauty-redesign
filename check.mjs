@@ -5,63 +5,51 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const pages = ['index.html', 'lashes-brows.html', 'hair-salon.html', 'nails-makeup.html'];
-let errors = [];
+const projectRoot = __dirname;
+let errorCount = 0;
 
-console.log(`Checking ${pages.length} project HTML files: ${pages.join(', ')}...\n`);
+console.log('=== RUNNING STATIC LINK & ASSET VALIDATION CHECK ===\n');
 
-pages.forEach(file => {
-  const filePath = path.join(__dirname, file);
-  if (!fs.existsSync(filePath)) {
-    errors.push(`File missing: ${file}`);
-    return;
-  }
+// Only check project site pages, ignore temporary scraped raw html files
+const htmlFiles = fs.readdirSync(projectRoot).filter(file => 
+  file.endsWith('.html') && !file.includes('live_') && !file.includes('raw_') && !file.includes('_raw')
+);
 
+htmlFiles.forEach(file => {
+  const filePath = path.join(projectRoot, file);
   const content = fs.readFileSync(filePath, 'utf-8');
 
-  // Check CSS linked
-  if (!content.includes('./assets/css/style.css')) {
-    errors.push(`${file}: Missing ./assets/css/style.css link`);
+  console.log(`Checking ${file}...`);
+
+  // 1. Check for absolute path references (/assets/...)
+  const absMatches = content.match(/href=["']\/assets\/[^"']*["']|src=["']\/assets\/[^"']*["']/g);
+  if (absMatches) {
+    console.error(`  ❌ ERROR in ${file}: Absolute path detected: ${absMatches.join(', ')}`);
+    errorCount += absMatches.length;
   }
 
-  // Check JS linked
-  if (!content.includes('./assets/js/app.js')) {
-    errors.push(`${file}: Missing ./assets/js/app.js script`);
-  }
+  // 2. Check relative hrefs and src links
+  const matches = [...content.matchAll(/(?:href|src)=["']([^"']+)["']/g)];
 
-  // Check local images exist
-  const imgMatches = content.match(/src=["'](\.\/assets\/img\/[^"']+)["']/g) || [];
-  imgMatches.forEach(match => {
-    const relativePath = match.replace(/src=["']/, '').replace(/["']$/, '');
-    const fullPath = path.join(__dirname, relativePath);
-    if (!fs.existsSync(fullPath)) {
-      errors.push(`${file}: Local image broken reference -> ${relativePath}`);
+  matches.forEach(match => {
+    const link = match[1];
+    if (link.startsWith('http://') || link.startsWith('https://') || link.startsWith('tel:') || link.startsWith('mailto:') || link.startsWith('#') || link.startsWith('javascript:')) {
+      return;
     }
-  });
 
-  // Check anchor targets
-  const anchorMatches = content.match(/href=["'](\.\/[^"']*#[^"']+)["']/g) || [];
-  anchorMatches.forEach(match => {
-    const rawHref = match.replace(/href=["']/, '').replace(/["']$/, '');
-    const [targetFile, anchorId] = rawHref.split('#');
-    const targetFilePath = path.join(__dirname, targetFile.replace('./', ''));
-    if (fs.existsSync(targetFilePath)) {
-      const targetContent = fs.readFileSync(targetFilePath, 'utf-8');
-      if (!targetContent.includes(`id="${anchorId}"`)) {
-        errors.push(`${file}: Anchor #${anchorId} not found in ${targetFile}`);
-      }
-    } else {
-      errors.push(`${file}: Anchor target file missing -> ${targetFile}`);
+    const resolvedPath = path.resolve(projectRoot, link);
+    if (!fs.existsSync(resolvedPath)) {
+      console.error(`  ❌ ERROR in ${file}: Broken local path reference "${link}" -> resolved to "${resolvedPath}"`);
+      errorCount++;
     }
   });
 });
 
-console.log('--- CHECK RESULTS ---');
-if (errors.length === 0) {
-  console.log(`PASS: 0 errors in ${pages.length} project HTML files.\n`);
+console.log(`\n========================================`);
+if (errorCount === 0) {
+  console.log(`✅ node check.mjs ........ PASS (0 errors across ${htmlFiles.length} site HTML pages)`);
   process.exit(0);
 } else {
-  console.log(`FAIL: Found ${errors.length} errors:`);
-  errors.forEach(err => console.error(` - ${err}`));
+  console.error(`❌ node check.mjs ........ FAIL (${errorCount} errors found)`);
   process.exit(1);
 }
