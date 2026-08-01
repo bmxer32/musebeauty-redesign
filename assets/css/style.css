@@ -90,7 +90,7 @@ button, input, select, textarea {
   top: 0;
   z-index: 1000;
   height: var(--header-height);
-  background: rgba(250, 249, 246, 0.95);
+  background: rgba(250, 249, 246, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -102,30 +102,35 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   width: 100%;
 }
 
 .brand-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   letter-spacing: -0.02em;
   color: var(--text-main);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-logo img {
-  height: 36px;
+  height: 32px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 /* Main Navigation Menu */
@@ -142,6 +147,7 @@ button, input, select, textarea {
   transition: color var(--transition-fast);
   padding: 6px 0;
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.is-active {
@@ -173,6 +179,7 @@ button, input, select, textarea {
   transition: all var(--transition-fast);
   border: none;
   text-align: center;
+  white-space: normal;
 }
 
 .btn-primary {
@@ -198,9 +205,10 @@ button, input, select, textarea {
 }
 
 .btn-sm {
-  min-height: 38px;
-  padding: 8px 16px;
-  font-size: 0.875rem;
+  min-height: 36px;
+  padding: 6px 14px;
+  font-size: 0.825rem;
+  white-space: nowrap;
 }
 
 /* Burger Mobile Menu Button */
